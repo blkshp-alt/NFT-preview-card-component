@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(13, 25, 43);
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.1rem;
+}
+.card-wrap {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 4.8rem 9.6rem 12.8rem;
+}
+.card {
+  width: 375px;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 37, 61) 0%,
+    rgba(20, 37, 61) 35%,
+    rgba(47, 65, 91) 100%
+  );
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.card-body {
+  margin: 2.4rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 255, 247, 0.712);
+  border-radius: 6px;
+}
+
+.img-container:hover .overlay {
+  opacity: 0.875;
+}
+
+.overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-info {
+  margin-top: 1.4rem;
+}
+
+.card-title {
+  margin: 1.4rem 0 2rem;
+  font-size: 2.4rem;
+}
+
+.card-description {
+  color: rgb(139, 172, 218);
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.card-specialty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-specialty li {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+span {
+  padding-right: 1.2rem;
+}
+.card-specialty li:nth-child(1) {
+  color: rgb(0, 255, 247);
+}
+.card-specialty li:nth-child(2) {
+  color: rgb(139, 172, 218);
+}
+
+hr {
+  border: 0;
+  height: 0.4px;
+  background: rgb(139, 172, 218);
+}
+
+.card-footer {
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.credits {
+  color: rgb(139, 172, 218);
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.credits strong {
+  color: #fff;
+  font-weight: 400;
+}
+
+.card-title:hover,
+.credits strong:hover {
+  color: rgb(0, 255, 247);
+}
+
+.avatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
